@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEC9756CC41E6B23FAF321F2 /* libPods-DatabaseUpgrade.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D838565E647B5DA8EC94F32 /* libPods-DatabaseUpgrade.a */; };
 		FE6B463C1D66D54300DDC2F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6B463B1D66D54300DDC2F8 /* main.m */; };
 		FE6B463F1D66D54300DDC2F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6B463E1D66D54300DDC2F8 /* AppDelegate.m */; };
 		FE6B46421D66D54300DDC2F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6B46411D66D54300DDC2F8 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EA25A5B378DEB42967C17F2 /* Pods-DatabaseUpgrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseUpgrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DatabaseUpgrade/Pods-DatabaseUpgrade.debug.xcconfig"; sourceTree = "<group>"; };
+		8D838565E647B5DA8EC94F32 /* libPods-DatabaseUpgrade.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DatabaseUpgrade.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E99F8E7AEBFB0B20F3E167 /* Pods-DatabaseUpgrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseUpgrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatabaseUpgrade/Pods-DatabaseUpgrade.release.xcconfig"; sourceTree = "<group>"; };
 		FE6B46371D66D54300DDC2F8 /* DatabaseUpgrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatabaseUpgrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6B463B1D66D54300DDC2F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE6B463D1D66D54300DDC2F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC9756CC41E6B23FAF321F2 /* libPods-DatabaseUpgrade.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C17F848B8D8D024D46D0C15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D838565E647B5DA8EC94F32 /* libPods-DatabaseUpgrade.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DAD5E3B702E0B5F32CE87A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EA25A5B378DEB42967C17F2 /* Pods-DatabaseUpgrade.debug.xcconfig */,
+				A0E99F8E7AEBFB0B20F3E167 /* Pods-DatabaseUpgrade.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FE6B462E1D66D54300DDC2F8 = {
 			isa = PBXGroup;
 			children = (
+				FE6B46511D66D5F700DDC2F8 /* Classes */,
 				FE6B46391D66D54300DDC2F8 /* DatabaseUpgrade */,
 				FE6B46381D66D54300DDC2F8 /* Products */,
+				6DAD5E3B702E0B5F32CE87A2 /* Pods */,
+				6C17F848B8D8D024D46D0C15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +104,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FE6B46511D66D5F700DDC2F8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE6B464E1D66D54300DDC2F8 /* Build configuration list for PBXNativeTarget "DatabaseUpgrade" */;
 			buildPhases = (
+				21C19DC7AF8A17487FC510FB /* [CP] Check Pods Manifest.lock */,
 				FE6B46331D66D54300DDC2F8 /* Sources */,
 				FE6B46341D66D54300DDC2F8 /* Frameworks */,
 				FE6B46351D66D54300DDC2F8 /* Resources */,
+				F358278B2B158B7C8F7A824E /* [CP] Embed Pods Frameworks */,
+				DED58BE57BBFF58941857FDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +178,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21C19DC7AF8A17487FC510FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DED58BE57BBFF58941857FDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DatabaseUpgrade/Pods-DatabaseUpgrade-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F358278B2B158B7C8F7A824E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DatabaseUpgrade/Pods-DatabaseUpgrade-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE6B46331D66D54300DDC2F8 /* Sources */ = {
@@ -261,6 +344,7 @@
 		};
 		FE6B464F1D66D54300DDC2F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA25A5B378DEB42967C17F2 /* Pods-DatabaseUpgrade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DatabaseUpgrade/Info.plist;
@@ -272,6 +356,7 @@
 		};
 		FE6B46501D66D54300DDC2F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E99F8E7AEBFB0B20F3E167 /* Pods-DatabaseUpgrade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DatabaseUpgrade/Info.plist;
@@ -300,6 +385,7 @@
 				FE6B46501D66D54300DDC2F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
