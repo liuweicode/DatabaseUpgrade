@@ -1,14 +1,32 @@
 PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
+  - FMDB/SQLCipher (2.6.2):
+    - SQLCipher
   - FMDB/standard (2.6.2)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - MTLFMDBAdapter (0.3.0):
+    - FMDB (~> 2.3)
+    - Mantle (~> 2.0)
+  - SQLCipher (3.4.0):
+    - SQLCipher/standard (= 3.4.0)
+  - SQLCipher/common (3.4.0)
+  - SQLCipher/standard (3.4.0):
+    - SQLCipher/common
 
 DEPENDENCIES:
   - FMDB (~> 2.6)
+  - FMDB/SQLCipher
+  - MTLFMDBAdapter (~> 0.3.0)
 
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  MTLFMDBAdapter: 62ffbdb9ed154b33697f6bded0e839ff6d5a2aa0
+  SQLCipher: 4c768761421736a247ed6cf412d9045615d53dff
 
-PODFILE CHECKSUM: 98c07064f378c19267823c7b6e1fe51021e2b03e
+PODFILE CHECKSUM: 2531e492ab587357449feedba7953eceadb4b69c
 
 COCOAPODS: 1.0.1

@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MTLFMDBAdapter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Mantle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DatabaseUpgrade.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SQLCipher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>79A994FC3AC49121FFEAE7768FCCD750</key>
+		<key>288E88C210091F8F23E39EE18BC3F8A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<key>426BC4549A625B5E1E4200D5261A98BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CCC59A3DA32DC4436DE29C5D16C0243</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D638B9D6EB1F12C419CB5BCB69120921</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE73FFAD9CBE61014848B4E0852ECAEA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

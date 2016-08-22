@@ -14,6 +14,9 @@
 		FE6B46451D66D54300DDC2F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6B46431D66D54300DDC2F8 /* Main.storyboard */; };
 		FE6B46471D66D54300DDC2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6B46461D66D54300DDC2F8 /* Assets.xcassets */; };
 		FE6B464A1D66D54300DDC2F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6B46481D66D54300DDC2F8 /* LaunchScreen.storyboard */; };
+		FE6B46541D66DE4900DDC2F8 /* DBExecuter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6B46531D66DE4900DDC2F8 /* DBExecuter.m */; };
+		FE6B46581D66DF5900DDC2F8 /* DB_1.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6B46571D66DF5900DDC2F8 /* DB_1.m */; };
+		FE6B465E1D66E6AB00DDC2F8 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6B465D1D66E6AB00DDC2F8 /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,12 @@
 		FE6B46461D66D54300DDC2F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE6B46491D66D54300DDC2F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE6B464B1D66D54300DDC2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6B46521D66DE4900DDC2F8 /* DBExecuter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBExecuter.h; sourceTree = "<group>"; };
+		FE6B46531D66DE4900DDC2F8 /* DBExecuter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBExecuter.m; sourceTree = "<group>"; };
+		FE6B46561D66DF5900DDC2F8 /* DB_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB_1.h; sourceTree = "<group>"; };
+		FE6B46571D66DF5900DDC2F8 /* DB_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DB_1.m; sourceTree = "<group>"; };
+		FE6B465C1D66E6AB00DDC2F8 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		FE6B465D1D66E6AB00DDC2F8 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +116,22 @@
 		FE6B46511D66D5F700DDC2F8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FE6B46551D66DEE700DDC2F8 /* Version */,
+				FE6B46521D66DE4900DDC2F8 /* DBExecuter.h */,
+				FE6B46531D66DE4900DDC2F8 /* DBExecuter.m */,
+				FE6B465C1D66E6AB00DDC2F8 /* DBManager.h */,
+				FE6B465D1D66E6AB00DDC2F8 /* DBManager.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE6B46551D66DEE700DDC2F8 /* Version */ = {
+			isa = PBXGroup;
+			children = (
+				FE6B46561D66DF5900DDC2F8 /* DB_1.h */,
+				FE6B46571D66DF5900DDC2F8 /* DB_1.m */,
+			);
+			path = Version;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6B46581D66DF5900DDC2F8 /* DB_1.m in Sources */,
 				FE6B46421D66D54300DDC2F8 /* ViewController.m in Sources */,
 				FE6B463F1D66D54300DDC2F8 /* AppDelegate.m in Sources */,
+				FE6B465E1D66E6AB00DDC2F8 /* DBManager.m in Sources */,
 				FE6B463C1D66D54300DDC2F8 /* main.m in Sources */,
+				FE6B46541D66DE4900DDC2F8 /* DBExecuter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

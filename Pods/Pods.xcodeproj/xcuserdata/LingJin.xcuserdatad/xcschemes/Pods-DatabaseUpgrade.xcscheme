@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '79A994FC3AC49121FFEAE7768FCCD750'
+               BlueprintIdentifier = '288E88C210091F8F23E39EE18BC3F8A5'
                BlueprintName = 'Pods-DatabaseUpgrade'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-DatabaseUpgrade.a'>

@@ -9,6 +9,8 @@ target 'DatabaseUpgrade' do
 
 # 数据库
 pod 'FMDB', '~> 2.6'
+pod 'FMDB/SQLCipher'
+pod 'MTLFMDBAdapter', '~> 0.3.0'
 
 end
 
